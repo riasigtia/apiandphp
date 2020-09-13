@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: #f4f4f4;">
+
+<div class="navigation">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
+    <img class="navbar-brand" src="https://www.codeninjas.com/assets/img/seo/cn-share.png" height="55px" href="#">
+    <a class="navbar-brand" href="#">CodingNinjas</a>
+   
+    <div id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" id="current" href="#home" >Home </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link"  href="#myform"  id="register1">Register</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" id="table"  href="#data"> Record</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="alert collapse alert-info my-4 mr-5 ml-5" id="home" role="alert">
+  <center>
+  <h2 class="alert-heading">Campus Ninja Programme</h2>
+  <p>We are looking for people who can contribute to a larger picture of <br />
+    getting awesome developers together, helping those who want to learn <br />
+    programming.The students work directly with us as a part of the team <br />
+    and get a direct hang of the startup culture at Coding Ninjas<br />
+    <b>You can be our face in your college</b><br />
+    You just need the zeal to expose yourself to management and leadership
+    skills.<br /></p>
+    <p style="float: left;">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQbi3iKErU9WMH_DtMGlix-if2-CdLcAARSHA&usqp=CAU"
+       height="100px" width="100px" border="1px">
+    </p>
+  <p class="mb-0" style="float: centre"> You think you have the hidden leader inside you?<br />
+        
+        The best of all, Campus Ninjas fetch the gold star by getting featured
+        on the website <br />
+        which gives them an edge over others to get noticed around the
+        Professional network.<br />
+        Hurry up, fill the form and get a chance to be a face of your campus and earn goodies!.<br />
+       </p>
+        
+</center>
+</div>
+
+    <div class="collapse mb-4 my-4 log-box" id="myform">
+      <center>
+        <h2>Register Here</h2>
+        <form id="regform">
+        <div class="form-group">
+          <label for="name" style="margin-right: 24%;"> Name:</label> 
+          <input type="text" style="width: 30%;" class="form-control" name="name" id="name" /><br />
+          <span id="nam1"></span>
+        </div>
+        <div class="form-group">
+         <label for="password" style="margin-right: 24%;">Password:</label>
+         <input type="password" style="width: 30%;" class="form-control" name="password" id="password" /><br />
+          <span id="pword"></span>
+        </div>
+        <div class="form-group">
+          <label for="email" style="margin-right: 24%;">Mail ID: </label>
+          <input type="text" style="width: 30%;" class="form-control"name="email" aria-describedby="emailHelp" id="email" /><br />
+          <span id="mail"></span>
+        </div>
+        <div class="form-group">
+                <p><input id="field_terms" type="checkbox" class="form-control-input" required name="terms">
+                <label for="field_terms">I accept the terms and conditions</label></p>
+         </div>
+         <div class="msg mb-4" id="reg"></div>
+          <button class="btn btn-primary btn-block"style="width: 20%;" id="rbtn">Register</button>
+        </form>
+      </center>
+    </div>
+    <div id="data" class="collapse mb-4 my-4">
+      <center>
+        <h2> Registrants</h2>
+        <table border="4" id="show">
+          <thead>
+            <tr>
+              <th id="th1">No</th>
+              <th id="th2">Name</th>
+              <th id="th3">Email</th>
+              <th id="th4">Password</th>
+              <th id="th5">Date and Time</th>
+            </tr>
+          </thead>
+          <tbody class="tbody"> 
+              
+          </tbody>
+        </table>
+      </center>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+            

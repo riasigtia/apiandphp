@@ -1,0 +1,23 @@
+.navigation {
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  
+  }
+  a:hover {
+    background-color: grey;
+  }
+  span{
+  
+    color: red;
+  
+  }
+  input[type="checkbox"]:required:invalid + label { color: red; }
+    input[type="checkbox"]:required:valid + label { color: green; }
+  h2{
+      color: blue;
+  }
+  
+  
+
